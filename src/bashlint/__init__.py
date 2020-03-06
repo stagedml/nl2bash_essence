@@ -282,9 +282,9 @@ def ast2list(node, order='dfs', _list=None, ignore_flag_order=False,
             for child in children:
                 ast2list(child, order, _list, ignore_flag_order, arg_type_only,
                          keep_common_args, with_flag_head, with_prefix)
-            _list.append(nast._H_NO_EXPAND)
+            _list.append(_H_NO_EXPAND)
         else:
-            _list.append(nast._V_NO_EXPAND)
+            _list.append(_V_NO_EXPAND)
     return _list
 
 
